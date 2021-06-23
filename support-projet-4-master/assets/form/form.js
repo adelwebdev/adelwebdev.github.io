@@ -40,7 +40,7 @@ $(function () {
 
     $.ajax({
       type: "POST",
-      url: "assets/form/handler.php",
+      url:"support-projet-4-master/assets/form/handler.php"
       data: $form.serialize(),
       success: after_form_submitted,
       dataType: "json",
