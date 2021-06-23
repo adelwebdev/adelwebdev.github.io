@@ -17,6 +17,6 @@ $validator->field('message')->maxLength(6000);
 
 
 // ENTRER E-MAIL ICI
-$pp->sendEmailTo('admb34@yandex.ru'); 
+$pp->sendEmailTo("admb34@yandex.ru"); 
 
 echo $pp->process($_POST);
