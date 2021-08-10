@@ -638,9 +638,9 @@ footer p {
   .legende {
     opacity: 1;
   }
-  #other-skills {
+  /* #other-skills {
     display: none;
-  }
+  } */
   #hobbies {
     margin-top: -30px;
   }
