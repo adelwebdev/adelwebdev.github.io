@@ -42,6 +42,7 @@ h1 {
   font-size: 4.3em;
   text-transform: uppercase;
 }
+
 #line {
   height: 1px;
   background-color: #b3aca7;
@@ -97,7 +98,7 @@ header .button:hover a {
 /* ********************** LANGAGES *********************** */
 #langages {
   padding: 80px 80px 80px 50px;
-  margin: 45px 0 0 6%;
+  margin: 120px 0 0 6%;
   height: 660px;
   width: 47%;
   max-width: 640px;

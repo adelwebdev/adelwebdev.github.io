@@ -17,7 +17,7 @@ window.addEventListener("scroll", function () {
 // TYPED
 var typed = new Typed(".typed", {
   strings: [
-    "Hello! my name is Adel. After a career that made me discover several professional circles and pursue different professions. I decided to fully study the code, for almost 4 years I trained myself in Front languages such as CSS, JavaScript and its Framework React and Vue in order to become as fast as possible a developer. I discovered not only a professional future, but also a passion for programming...",
+    "Hi! My name is Adel. After a journey that made me discover several professional circles and exercise different trades. I decided to study computer science and software development in depth, for more than six years I worked and trained my self in computer languages such as CSS, JavaScript and its React and Vue frameworks in order to become a developer. I discovered not only a professional future, but also a passion for programming.",
   ],
   typeSpeed: 20,
 });
