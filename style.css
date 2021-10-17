@@ -157,7 +157,7 @@ header .button:hover a {
 /* ********************** PARCOURS *************************** */
 #parcours {
   max-width: 800px;
-  margin: 640px auto 180px auto;
+  margin: 740px auto 180px auto;
   padding: 40px 30px 100px 30px;
   background: url(./media/parcours.jpg) no-repeat fixed 50% 50%;
   background-size: cover;
