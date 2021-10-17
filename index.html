@@ -52,8 +52,8 @@
       <div class="container">
         <div class="row presentation">
           <div class="col-6 col-md-3 infos">
-            <h5><i class="fa fa-user"></i> 36 y.o</h5>
-            <h5><i class="fa fa-compass"></i> Moscow</h5>
+            <h5><i class="fa fa-user"></i> 36 years old</h5>
+            <h5><i class="fa fa-compass"></i> Moscow, Russia</h5>
             <h5><i class="fa fa-phone"></i> +7 (977) 726 17 96</h5>
             <h5><i class="fa fa-envelope"></i> admb34@yandex.ru</h5>   
         </div>
@@ -554,18 +554,22 @@
     </div>
 
     <div class="form-container">
-      <form id="reused_form">
+      <form id="reused_form" action="contactform.php" method="post">
         <div>
           <input id="name" type="text" name="name" placeholder="Name" required class="validate">
         </div>
         <div>
-          <input id="email" type="email" name="email" placeholder="E-mail" required class="validate">
+          <input id="subject" type="text" name="subject" placeholder="Subject" required class="validate">
         </div>
+        <div>
+          <input id="email" type="text" name="mail" placeholder="Your e-mail" required class="validate">
+        </div>
+        <!-- or input type="email" for the mail input -->
         <div>
           <textarea id="message" name="message" placeholder="Your message..." class="validate" ></textarea>
         </div>
         <div>
-          <button class="form-button" type="submit">Send</button>
+          <button class="form-button" name="submit" type="submit">Send e-mail</button>
         </div>
       </form>
 
