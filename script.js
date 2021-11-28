@@ -17,7 +17,7 @@ window.addEventListener("scroll", function () {
 // TYPED
 var typed = new Typed(".typed", {
   strings: [
-    "Hi! My name is Adel. After a journey that made me discover several professional circles and exercise different trades. I decided to study computer science and software development in depth, for more than six years I worked and trained my self in computer languages such as CSS, JavaScript and its React and Vue frameworks in order to become a developer. I discovered not only a professional future, but also a passion for programming.",
+    "Hi! My name is Adel. After an Ingineer Degree in Statistics and a MBA in Fiance as well as a Work Experience of 5 years as a Statistician in a the Distribution Company Of Electricity and Gas of Algiers, i decided to study Computer Science and Software Development in depth, for more than five years i worked and trained my self in computer languages such as CSS, JavaScript and its React and Vue frameworks in order to become a Programmer. I discovered not only a professional future, but also a passion for programming.",
   ],
   typeSpeed: 20,
 });
