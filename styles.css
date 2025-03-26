@@ -534,17 +534,20 @@ footer {
 /* For very small devices */
 @media (max-width: 480px) {
   .logo img {
-    height: 50px !important;
+    height: 120px !important; /* Force larger size on mobile */
     /* height: 35px; Even smaller for tiny screens */
     min-width: 50px;
+    opacity: 0.85; /* Adjust value between 0 (invisible) and 1 (fully visible) */
   }
 }
 
 /* Extra small devices (iPhone SE, smaller phones) */
 @media (max-width: 375px) {
   .logo img {
-    height: 45px !important;
+    height: 120px !important; /* Force larger size on mobile */
+
     max-width: 130px;
+    opacity: 0.85; /* Adjust value between 0 (invisible) and 1 (fully visible) */
   }
 }
 
