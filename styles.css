@@ -15,6 +15,7 @@ body {
   top: 60%;
   transform: translateY(-50%);
   padding-bottom: 5px;
+  z-index: 10; /* Ensures logo stays above other elements */
 }
 
 /* Logo Styles */
@@ -484,11 +485,31 @@ footer {
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-  .logo img {
-    height: 40px; /* Smaller logo for mobile */
+  .logo {
+    position: relative; /* Change to relative positioning */
+    left: auto;
+    top: auto;
+    transform: none;
+    display: flex; /* Better mobile control */
+    align-items: center;
+    margin-right: 10px; /* Space between logo and title */
   }
 
+  .logo img {
+    height: 50px !important; /* Force larger size on mobile */
+    min-height: 50px; /* Prevents shrinking */
+    max-width: 150px; /* Prevents overflow */
+  }
+
+  /* Adjust header layout */
+  header {
+    padding: 12px 0;
+  }
+
+  /* Adjust container padding to account for logo */
   .container {
+    padding-left: 20px;
+    flex-wrap: wrap; /* Allow elements to stack if needed */
     flex-direction: column;
     align-items: flex-start;
   }
@@ -503,14 +524,18 @@ footer {
   }
 }
 
-@media (max-width: 768px) {
-  .logo {
-    position: static;
-    transform: none;
-    margin-right: 10px;
+/* For very small devices */
+@media (max-width: 480px) {
+  .logo img {
+    height: 45px !important;
+    /* height: 35px; Even smaller for tiny screens */
   }
-  .container {
-    padding-left: 20px;
-    flex-wrap: wrap;
+}
+
+/* Extra small devices (iPhone SE, smaller phones) */
+@media (max-width: 375px) {
+  .logo img {
+    height: 45px !important;
+    max-width: 130px;
   }
 }
