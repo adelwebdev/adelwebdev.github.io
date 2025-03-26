@@ -505,7 +505,7 @@ footer {
     max-width: 150px; /* Prevents overflow */
     padding-top: 60px;
     margin-left: 1px;
-    opacity: 0.9; /* Adjust value between 0 (invisible) and 1 (fully visible) */
+    opacity: 0.85; /* Adjust value between 0 (invisible) and 1 (fully visible) */
   }
 
   /* Adjust header layout */
