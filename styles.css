@@ -16,6 +16,7 @@ body {
   transform: translateY(-50%);
   padding-bottom: 5px;
   z-index: 10; /* Ensures logo stays above other elements */
+  flex-shrink: 0; /* Prevents logo from shrinking */
 }
 
 /* Logo Styles */
@@ -23,6 +24,7 @@ body {
   height: 190px; /* Adjust the height as needed */
   width: auto; /* Maintain aspect ratio */
   transition: transform 0.3s ease;
+  transition: opacity 0.3s ease; /* Smooth fade effect */
 }
 
 .logo img:hover {
@@ -493,16 +495,21 @@ footer {
     display: flex; /* Better mobile control */
     align-items: center;
     margin-right: 10px; /* Space between logo and title */
+    height: 55px !important; /* Forces size on all mobile devices */
+    min-width: 55px; /* Prevents collapse */
   }
 
   .logo img {
-    height: 50px !important; /* Force larger size on mobile */
+    height: 120px !important; /* Force larger size on mobile */
     min-height: 50px; /* Prevents shrinking */
     max-width: 150px; /* Prevents overflow */
+    padding-top: 60px;
+    margin-left: 1px;
+    opacity: 0.9; /* Adjust value between 0 (invisible) and 1 (fully visible) */
   }
 
   /* Adjust header layout */
-  header {
+  .header {
     padding: 12px 0;
   }
 
@@ -527,8 +534,9 @@ footer {
 /* For very small devices */
 @media (max-width: 480px) {
   .logo img {
-    height: 45px !important;
+    height: 50px !important;
     /* height: 35px; Even smaller for tiny screens */
+    min-width: 50px;
   }
 }
 
@@ -537,5 +545,14 @@ footer {
   .logo img {
     height: 45px !important;
     max-width: 130px;
+  }
+}
+
+/* ===== Nuclear Option for Stubborn Mobile Browsers ===== */
+@supports (-webkit-touch-callout: none) {
+  /* Targets iOS Safari specifically */
+  .logo img {
+    height: 55px !important;
+    min-width: 55px !important;
   }
 }
