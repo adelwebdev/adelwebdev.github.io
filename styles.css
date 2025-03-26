@@ -1,0 +1,516 @@
+/* General Styles */
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.6;
+  color: #fff;
+  background-color: #1a1a1a;
+  margin: 0;
+  padding: 0;
+}
+
+/* Logo Styles - Positioned absolutely on the left */
+.logo {
+  position: absolute;
+  left: 10px;
+  top: 60%;
+  transform: translateY(-50%);
+  padding-bottom: 5px;
+}
+
+/* Logo Styles */
+.logo img {
+  height: 190px; /* Adjust the height as needed */
+  width: auto; /* Maintain aspect ratio */
+  transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+  transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+.container {
+  position: relative; /* Needed for absolute logo positioning */
+  padding-left: 80px; /* Make space for the logo */
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.tagline {
+  font-size: 1.25rem; /* Adjust this value as needed */
+  /* margin-top: 0.5rem;  Adds space between title and tagline */
+  /* color: #ccc;  Optional: subtle color for hierarchy */
+}
+
+/* Language Selector Styles */
+.language-selector {
+  position: fixed;
+  top: 5px;
+  right: 20px;
+  z-index: 1000;
+  display: flex;
+  gap: 5px;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.lang-btn {
+  background: #00ffcc;
+  color: #0d0d0d;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.lang-btn:hover {
+  background: #00ccaa;
+}
+
+/* RTL support for Arabic */
+[dir="rtl"] {
+  direction: rtl;
+  text-align: right;
+}
+
+[dir="rtl"] .language-selector {
+  right: auto;
+  left: 20px;
+}
+
+/* Back to Top Button */
+#back-to-top {
+  display: none; /* Hidden by default */
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  background-color: #00ffcc;
+  color: #0d0d0d;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+#back-to-top:hover {
+  background-color: #00ccaa;
+}
+
+/* Header */
+header {
+  background-color: #0d0d0d;
+  padding: 20px 0;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+header .tagline {
+  font-size: 1.2rem;
+  color: #00ffcc;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Hero Section */
+#hero {
+  background: url("hero-bg.jpg") no-repeat center center/cover;
+  color: #fff;
+  padding: 100px 0;
+  text-align: center;
+}
+
+#hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+#hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  background-color: #00ffcc;
+  color: #0d0d0d;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+/* Services Section */
+#services {
+  padding: 50px 0;
+  background-color: #262626;
+}
+
+#services h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.service {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.service h3 {
+  color: #00ffcc;
+}
+
+/* Services Section */
+#services {
+  padding: 80px 0;
+  background-color: #1a1a1a;
+  text-align: center;
+}
+
+#services h2 {
+  font-size: 2.5rem;
+  color: #00ffcc;
+  margin-bottom: 20px;
+}
+
+#services .subtitle {
+  font-size: 1.2rem;
+  color: #ccc;
+  margin-bottom: 50px;
+}
+
+.service-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.service-card {
+  background-color: #262626;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.service-card h3 {
+  font-size: 1.5rem;
+  color: #00ffcc;
+  margin-bottom: 15px;
+}
+
+.service-card p {
+  color: #ccc;
+  margin-bottom: 15px;
+}
+
+.service-card ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.service-card ul li {
+  color: #ccc;
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 20px;
+}
+
+.service-card ul li::before {
+  content: "✔";
+  color: #00ffcc;
+  position: absolute;
+  left: 0;
+}
+
+.service-card .price {
+  font-size: 1.2rem;
+  color: #00ffcc;
+  margin-bottom: 20px;
+}
+
+.service-card .cta-button {
+  display: inline-block;
+  background-color: #00ffcc;
+  color: #0d0d0d;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.service-card .cta-button:hover {
+  background-color: #00ccaa;
+}
+
+.service-card .icon {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+/* Founder's Note Section */
+#founders-note {
+  padding: 50px 0;
+  background-color: #333;
+  text-align: center;
+}
+
+#founders-note blockquote {
+  font-style: italic;
+  color: #ccc;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#founders-note footer {
+  margin-top: 20px;
+  font-weight: bold;
+  color: #00ffcc;
+}
+
+/* Footer Email Link */
+footer a {
+  color: #00ffcc;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Testimonials Section */
+#testimonials {
+  padding: 50px 0;
+  background-color: #333;
+  text-align: center;
+}
+
+#testimonials h2 {
+  margin-bottom: 40px;
+  color: #00ffcc;
+}
+
+.testimonial {
+  background-color: #262626;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.testimonial p {
+  color: #ccc;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.testimonial strong {
+  color: #00ffcc;
+  font-weight: bold;
+}
+
+/* Blog Styles */
+#blog-posts {
+  padding: 50px 0;
+  background-color: #262626;
+}
+
+.blog-post {
+  background-color: #333;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.blog-post h3 {
+  color: #00ffcc;
+  margin-bottom: 10px;
+}
+
+.blog-post p {
+  color: #ccc;
+  margin-bottom: 15px;
+}
+
+.blog-post a {
+  color: #00ffcc;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.blog-post a:hover {
+  text-decoration: underline;
+}
+
+/* Forum Styles */
+#forum-categories {
+  padding: 50px 0;
+  background-color: #1a1a1a;
+}
+
+.category {
+  background-color: #262626;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.category h3 {
+  color: #00ffcc;
+  margin-bottom: 10px;
+}
+
+.category p {
+  color: #ccc;
+}
+
+/* FAQ Section */
+#faq {
+  padding: 50px 0;
+  background-color: #262626;
+}
+
+.faq-item {
+  margin-bottom: 20px;
+}
+
+.faq-question {
+  cursor: pointer;
+  font-weight: bold;
+  color: #00ffcc;
+}
+
+.faq-answer {
+  /* display: none; */
+  margin-top: 10px;
+  color: #ccc;
+}
+
+/* Contact Form */
+#contact {
+  padding: 50px 0;
+  /* background-color: #1a1a1a; */
+  background-color: #262626;
+}
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+#contact-form label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+#contact-form input,
+#contact-form textarea {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #00ffcc;
+  background-color: #262626;
+  color: #fff;
+}
+
+#contact-form button {
+  background-color: #00ffcc;
+  color: #0d0d0d;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#contact-form button:hover {
+  background-color: #00ccaa;
+}
+
+/* Footer */
+footer {
+  background-color: #0d0d0d;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 50px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.service-card {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .logo img {
+    height: 40px; /* Smaller logo for mobile */
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul {
+    margin-top: 10px;
+  }
+
+  nav ul li {
+    margin-left: 0;
+    margin-right: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo {
+    position: static;
+    transform: none;
+    margin-right: 10px;
+  }
+  .container {
+    padding-left: 20px;
+    flex-wrap: wrap;
+  }
+}

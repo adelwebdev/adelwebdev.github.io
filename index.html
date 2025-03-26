@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vertex NeuralForge Security</title>
+    <meta
+      name="description"
+      content="AI-powered offense for unbreakable defense. Specializing in penetration testing, red teaming, and ethical hacking."
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Link to your JavaScript file -->
+    <script src="scripts.js"></script>
+  </head>
+  <body>
+    <!-- Language Selector -->
+    <div class="language-selector">
+      <button class="lang-btn" data-lang="en">English</button>
+      <button class="lang-btn" data-lang="fr">Français</button>
+      <button class="lang-btn" data-lang="ru">Русский</button>
+      <button class="lang-btn" data-lang="ar">العربية</button>
+    </div>
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <!-- Logo -->
+        <div class="logo">
+          <a href="index.html">
+            <img
+              src="./images/logo.jpg"
+              alt="Vertex NeuralForge Security Logo"
+            />
+          </a>
+        </div>
+        <!-- Your content with translation keys -->
+        <h1 data-translate="welcome_header">
+          Welcome to Vertex NeuralForge Security
+        </h1>
+        <p class="tagline" data-translate="welcome_subheader">
+          AI-powered offense for unbreakable defense
+        </p>
+
+        <nav>
+          <ul>
+            <li><a href="index.html" data-translate="home">Home</a></li>
+            <li><a href="#services" data-translate="services">Services</a></li>
+            <li>
+              <a href="#case-studies" data-translate="case_studies"
+                >Case Studies</a
+              >
+            </li>
+            <li><a href="blog/index.html" data-translate="blog">Blog</a></li>
+            <li><a href="forum/index.html" data-translate="forum">Forum</a></li>
+            <li>
+              <a href="#about" data-translate="about_us_menu">About Us</a>
+            </li>
+            <li>
+              <a href="#contact" data-translate="contact_menu">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" title="Go to top">↑</button>
+
+    <!-- Hero Section -->
+    <section id="hero">
+      <div class="container">
+        <h2 data-translate="hero">
+          Redefining Cybersecurity with AI-Driven Offense
+        </h2>
+        <p data-translate="hero_paragraphe">
+          We simulate real-world attacks to fortify your defenses. Are you ready
+          to test your limits?
+        </p>
+        <a href="#contact" class="cta-button" data-translate="get_started"
+          >Get Started</a
+        >
+      </div>
+    </section>
+
+    <!-- Founder's Note Section -->
+    <section id="founders-note">
+      <div class="container">
+        <h2 data-translate="founder_note">A Message from Our Founder</h2>
+        <blockquote>
+          <p data-translate="founder_note_text">
+            "Cybersecurity is not just about defending systems—it’s about
+            staying one step ahead of the attackers. At Vertex NeuralForge
+            Security, we use AI and offensive security to help organizations
+            build unbreakable defenses. I’m proud to lead a team that’s
+            passionate about innovation and committed to excellence."
+          </p>
+          <footer data-translate="footer">
+            — Adel Bouatta, Founder and CEO
+          </footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- Services Section
+    <section id="services">
+      <div class="container">
+        <h2>Our Services</h2>
+        <div class="service">
+          <h3>Penetration Testing</h3>
+          <p>Identify vulnerabilities before attackers do.</p>
+        </div>
+        <div class="service">
+          <h3>Red Teaming</h3>
+          <p>
+            Simulate advanced persistent threats (APTs) to test your defenses.
+          </p>
+        </div>
+        <div class="service">
+          <h3>AI-Driven Threat Simulations</h3>
+          <p>
+            Leverage machine learning to emulate evolving attack techniques.
+          </p>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- Case Studies Section -->
+    <section id="case-studies">
+      <div class="container">
+        <h2 data-translate="case_studies">Case Studies</h2>
+        <div class="case-study">
+          <h3 data-translate="title1">Financial Sector Breach Simulation</h3>
+          <p data-translate="text1">
+            How we helped a leading bank uncover critical vulnerabilities.
+          </p>
+        </div>
+        <div class="case-study">
+          <h3 data-translate="title2">Cloud Infrastructure Penetration Test</h3>
+          <p data-translate="text2">
+            Securing a global SaaS provider’s cloud environment.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+      <div class="container">
+        <h2 data-translate="What_they_say">What Our Clients Say</h2>
+        <div class="testimonial">
+          <p data-translate="wts1">
+            "Vertex NeuralForge helped us uncover critical vulnerabilities we
+            didn’t even know existed. Highly recommend their red teaming
+            services!"
+          </p>
+          <p data-translate="wts1a">
+            <strong>— John Doe, CTO at SecureCorp</strong>
+          </p>
+        </div>
+        <div class="testimonial">
+          <p data-translate="wts2">
+            "Their AI-driven simulations are next-level. Our defenses are
+            stronger than ever thanks to their expertise."
+          </p>
+          <p data-translate="wts2a">
+            <strong>— Jane Smith, CISO at FinTech Inc.</strong>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+      <div class="container">
+        <h2 data-translate="services_title">Our Cybersecurity Services</h2>
+        <p class="subtitle" data-translate="service_text">
+          Protecting your business with cutting-edge offensive security
+          solutions.
+        </p>
+        <!-- Service Cards -->
+        <div class="service-cards">
+          <!-- Penetration Testing -->
+          <div class="service-card">
+            <h3 data-translate="service_pen_test">Penetration Testing</h3>
+            <p data-translate="service_pen_test_text">
+              Simulate real-world attacks to identify vulnerabilities in your
+              systems.
+            </p>
+            <ul>
+              <li data-translate="service_pen_test_t1">
+                Network, Web App, and Cloud Testing
+              </li>
+              <li data-translate="service_pen_test_t2">
+                Detailed Vulnerability Report
+              </li>
+              <li data-translate="service_pen_test_t3">
+                Remediation Recommendations
+              </li>
+            </ul>
+            <p class="price" data-translate="service_pen_test_price">
+              Starting at <strong>$2,000</strong>
+            </p>
+            <a href="#contact" class="cta-button" data-translate="get_started"
+              >Get Started</a
+            >
+          </div>
+
+          <!-- Red Teaming -->
+          <div class="service-card">
+            <h3 data-translate="service_red_team">Red Teaming</h3>
+            <p>
+              Simulate advanced persistent threats (APTs) to test your defenses.
+            </p>
+            <ul>
+              <li>Custom Attack Scenarios</li>
+              <li>AI-Driven Adversary Simulation</li>
+              <li>Comprehensive Report</li>
+            </ul>
+            <p class="price">Starting at <strong>$10,000</strong></p>
+            <a href="#contact" class="cta-button">Get Started</a>
+          </div>
+
+          <!-- Social Engineering Testing -->
+          <div class="service-card">
+            <h3 data-translate="service_Social_Engineering_Testing">
+              Social Engineering Testing
+            </h3>
+            <p>Test employee awareness with phishing and vishing campaigns.</p>
+            <ul>
+              <li>Phishing Email Simulations</li>
+              <li>Vishing (Voice Phishing) Tests</li>
+              <li>Employee Training Recommendations</li>
+            </ul>
+            <p class="price">Starting at <strong>$5,000</strong></p>
+            <a href="#contact" class="cta-button">Get Started</a>
+          </div>
+
+          <!-- AI-Driven Cybersecurity Services -->
+          <div class="service-card">
+            <h3 data-translate="service_AI-Driven_Cybersecurity_Services">
+              AI-Powered Threat Hunting
+            </h3>
+            <p>
+              Proactively identify and neutralize threats using AI-driven
+              analytics.
+            </p>
+            <ul>
+              <li>Real-Time Threat Detection</li>
+              <li>Behavioral Analysis</li>
+              <li>Integration with SIEM Tools</li>
+            </ul>
+            <p class="price"><strong>$1,500/month</strong></p>
+            <a href="#contact" class="cta-button">Get Started</a>
+          </div>
+
+          <!-- AI-Based Vulnerability Management -->
+          <div class="service-card">
+            <h3 data-translate="service_AI-Based_Vulnerability_Management">
+              AI-Based Vulnerability Management
+            </h3>
+            <p>
+              Continuously identify, prioritize, and remediate vulnerabilities
+              using AI.
+            </p>
+            <ul>
+              <li>Automated Scanning</li>
+              <li>Risk-Based Prioritization</li>
+              <li>Patch Management</li>
+            </ul>
+            <p class="price"><strong>$1,200/month</strong></p>
+            <a href="#contact" class="cta-button">Get Started</a>
+          </div>
+
+          <!-- Advanced Red-Teaming Services -->
+          <div class="service-card">
+            <h3 data-translate="service_Advanced_Red-Teaming_Services">
+              Advanced Adversary Simulation
+            </h3>
+            <p>Simulate sophisticated APTs to test your defenses.</p>
+            <ul>
+              <li>Custom Attack Scenarios</li>
+              <li>AI-Driven Evasion Techniques</li>
+              <li>Detailed Post-Engagement Report</li>
+            </ul>
+            <p class="price">Starting at <strong>$15,000</strong></p>
+            <a href="#contact" class="cta-button">Get Started</a>
+          </div>
+
+          <!-- AI-Powered Phishing Simulator -->
+          <div class="service-card">
+            <h3 data-translate="service_AI-Powered_Phishing_Simulator">
+              AI-Powered Phishing Simulator
+            </h3>
+            <p>Train your employees with realistic phishing campaigns.</p>
+            <ul>
+              <li>AI-Generated Phishing Emails</li>
+              <li>Real-Time Analytics</li>
+              <li>Customizable Campaigns</li>
+            </ul>
+            <p class="price"><strong>$500/month</strong></p>
+            <a href="#contact" class="cta-button">Get Started</a>
+          </div>
+
+          <!-- Vulnerability Scanner -->
+          <div class="service-card">
+            <h3 data-translate="service_Vulnerability_Scanner">
+              Vulnerability Scanner
+            </h3>
+            <p>Scan your networks and applications for vulnerabilities.</p>
+            <ul>
+              <li>Automated Scanning</li>
+              <li>Prioritized Vulnerability Reports</li>
+              <li>Integration with SIEM Tools</li>
+            </ul>
+            <p class="price"><strong>$300/month</strong></p>
+            <a href="#contact" class="cta-button">Get Started</a>
+          </div>
+
+          <!-- Ethical Hacking Training -->
+          <div class="service-card">
+            <h3 data-translate="Ethical_Hacking_Training">
+              Ethical Hacking Training
+            </h3>
+            <p>Hands-on training for aspiring ethical hackers.</p>
+            <ul>
+              <li>Penetration Testing Techniques</li>
+              <li>Red Teaming Strategies</li>
+              <li>AI in Cybersecurity</li>
+            </ul>
+            <p class="price">Starting at <strong>$1,000</strong></p>
+            <a href="#contact" class="cta-button">Get Started</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq">
+      <div class="container">
+        <h2 data-translate="faq">Frequently Asked Questions</h2>
+        <div class="faq-item">
+          <div class="faq-question" data-translate="q1">
+            What is red teaming?
+          </div>
+          <div class="faq-answer" data-translate="a1">
+            Red teaming is a full-scope simulation of real-world attacks to test
+            an organization’s defenses.
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" data-translate="q2">
+            How does AI enhance offensive security?
+          </div>
+          <div class="faq-answer" data-translate="a2">
+            AI helps us emulate evolving attack techniques and identify
+            vulnerabilities faster.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about">
+      <div class="container">
+        <h2 data-translate="about_us">About Us</h2>
+        <p data-translate="about_us_text1">
+          At Vertex NeuralForge Security, we combine cutting-edge AI with
+          offensive security expertise to help organizations stay ahead of
+          threats. Our team of ethical hackers and red teamers is dedicated to
+          making your systems unbreakable.
+        </p>
+        <p data-translate="about_us_text2">
+          <strong>Adel Bouatta</strong>, Founder and CEO of Vertex NeuralForge
+          Security, brings over a decade of experience in cybersecurity,
+          penetration testing, and AI-driven threat simulations. With a passion
+          for innovation and a commitment to excellence, Adel leads our mission
+          to redefine cybersecurity.
+        </p>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="container">
+        <h2 data-translate="contact_us">Contact Us</h2>
+        <div>
+          <p data-translate="contact_us_p">
+            Have questions or want to discuss your security needs? Use the form
+            below or reach out to us at
+          </p>
+          <a href="mailto:securitytech01@proton.me">securitytech01@proton.me</a>
+        </div>
+
+        <form id="contact-form">
+          <label for="name" data-translate="contact_us_name">Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email" data-translate="contact_us_email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message" data-translate="contact_us_message"
+            >Message:</label
+          >
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <button type="submit" data-translate="contact_us_send">Send</button>
+        </form>
+
+        <script>
+          document
+            .getElementById("contact-form")
+            .addEventListener("submit", async (e) => {
+              e.preventDefault();
+
+              const formData = new FormData(e.target);
+              const data = Object.fromEntries(formData.entries());
+
+              const response = await fetch("/.netlify/functions/send-email", {
+                method: "POST",
+                headers: {
+                  "Content-Type": "application/json",
+                },
+                body: JSON.stringify(data),
+              });
+
+              const result = await response.text();
+              alert(result);
+            });
+        </script>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <p data-translate="footer2">
+          &copy; 2023 Vertex NeuralForge Security. All rights reserved.
+        </p>
+        <div>
+          <p data-translate="footer2_text">Contact the CEO:</p>
+          <a href="mailto:securitytech01@proton.me">securitytech01@proton.me</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
