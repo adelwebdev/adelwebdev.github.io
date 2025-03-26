@@ -545,7 +545,6 @@ footer {
 @media (max-width: 375px) {
   .logo img {
     height: 120px !important; /* Force larger size on mobile */
-
     max-width: 130px;
     opacity: 0.85; /* Adjust value between 0 (invisible) and 1 (fully visible) */
   }
@@ -557,5 +556,6 @@ footer {
   .logo img {
     height: 55px !important;
     min-width: 55px !important;
+    opacity: 0.85; /* Adjust value between 0 (invisible) and 1 (fully visible) */
   }
 }
