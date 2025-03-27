@@ -501,16 +501,26 @@ footer {
 
   .logo img {
     height: 120px !important; /* Force larger size on mobile */
-    min-height: 50px; /* Prevents shrinking */
+    min-height: 30px; /* Prevents shrinking */
     max-width: 150px; /* Prevents overflow */
     padding-top: 60px;
     margin-left: 1px;
+    width: auto !important;
     opacity: 0.85; /* Adjust value between 0 (invisible) and 1 (fully visible) */
   }
 
   /* Adjust header layout */
   .header {
     padding: 12px 0;
+
+    /* Prevent mobile browser interference */
+    max-height: unset !important;
+    -webkit-transform: none !important;
+    transform: none !important;
+
+    /* iOS-specific fixes */
+    -webkit-text-size-adjust: 100%;
+    -webkit-touch-callout: none;
   }
 
   /* Adjust container padding to account for logo */
